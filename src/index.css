@@ -598,3 +598,169 @@ button {
 
 
 
+
+
+
+
+/* General: For smaller screens */
+@media (max-width: 768px) {
+  /* Body and Header */
+  body {
+    font-size: 14px;
+  }
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+  .header .logo {
+    font-size: 24px;
+  }
+  .search-bar {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+  .header .logo {
+    font-size: 20px;
+  }
+  .search-bar input,
+  .search-bar button {
+    font-size: 12px;
+  }
+}
+
+/* Featured Section */
+@media (max-width: 768px) {
+  .tea-history {
+    padding: 10px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  .image-section img {
+    max-width: 80%;
+    width: auto;
+  }
+  .content-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-section h2 {
+    font-size: 24px;
+  }
+  .content-section h3 {
+    font-size: 18px;
+  }
+  .read-more {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
+
+/* Products Section */
+@media (max-width: 768px) {
+  .products {
+    padding: 15px;
+  }
+  .products-head h2,
+  .products-head h3 {
+    font-size: 1.2rem;
+  }
+  .card-container {
+    justify-content: center;
+    gap: 15px;
+  }
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-head h3 {
+    font-size: 1.5rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-info h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Store Section */
+@media (max-width: 768px) {
+  .tea-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tea-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tea-card {
+    width: 100%;
+  }
+  .tea-info h3,
+  .tea-info h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Testimonial Section */
+@media (max-width: 768px) {
+  .testimonial {
+    padding: 15px;
+    text-align: center;
+  }
+  .testimonial-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-card {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    width: 100%;
+  }
+  .testimonial-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Footer Section */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 0.8rem;
+  }
+  .footer ul li {
+    font-size: 0.8rem;
+  }
+}
