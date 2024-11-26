@@ -1,6 +1,7 @@
 
-
 import React from 'react';
+import { Link } from 'react-router-dom';
+import About from './About';
 
 function Header() {
     return (
@@ -14,30 +15,29 @@ function Header() {
             </div>
             <nav className="navbar">
       <ul className="nav-items">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li className="dropdown">
-          <a href="#">Products</a>
+       <Link to ="/" ><li>Home</li></Link>
+       <Link to ="/About" ><li>About Us</li></Link>
+       <Link to ="/" ><li className="dropdown">Products
           <ul className="dropdown-menu">
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">App Development</a></li>
-            <li><a href="#">SEO</a></li>
+          <Link to ="/" > <li>Web Development</li></Link>
+          <Link to ="/" > <li>App Development</li></Link>
+          <Link to ="/" ><li>SEO</li></Link>
           </ul>
-        </li>
-        <li className="dropdown">
-          <a href="#">Store</a>
+        </li></Link>
+        <Link to ="/" > <li className="dropdown">
+          Store
           <ul className="dropdown-menu">
-            <li><a href="#">Software</a></li>
-            <li><a href="#">Hardware</a></li>
-            <li><a href="#">Accessories</a></li>
+          <Link to ="/" ><li>Software</li></Link>
+          <Link to ="/" > <li>Hardware</li></Link>
+          <Link to ="/" ><li>Accessories</li></Link>
           </ul>
-        </li>
-        <li><a href="#">Contact Us</a></li>
+        </li></Link>
+        <Link to ="/" > <li>Contact Us</li></Link>
       </ul>
     </nav>
         </div>
-    );
-}
+      );
+    }
 
 function handleSearch() {
     const query = document.getElementById('search-input').value;
@@ -49,4 +49,5 @@ function handleSearch() {
     }
 }
 
-export default Header;
+export default Header; 
+
